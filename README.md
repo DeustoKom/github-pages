@@ -59,7 +59,7 @@ El primer paso es habilitar GitHub Pages en este [repositorio](https://docs.gith
 
 1. Abre una nueva pestaña del navegador, y trabaja en los pasos de tu segunda pestaña mientras lees las instrucciones en esta pestaña.
 1. Debajo del nombre de tu repositorio, haga clic en **Settings**.
-1. Haz clic en **PAges**, en la sección "GitHub Pages", utiliza el desplegable **Source**, y luego selecciona **main branch**.
+1. Haz clic en **Pages**, en la sección "GitHub Pages", utiliza el desplegable **Source**, y luego selecciona **main branch**.
 1. Espera alrededor de _un minuto_, luego actualiza esta página para el siguiente paso.
    > Al activar GitHub Pages se crea un despliegue (o _deploy_) de tu repositorio. Las acciones de GitHub pueden tardar hasta un minuto en responder mientras se espera el despliegue. Los próximos pasos serán de unos 20 segundos; este primer paso es más lento.
 
