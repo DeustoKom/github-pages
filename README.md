@@ -89,7 +89,7 @@ Tenemos que utilizar un tema preparado para blogs. Para esta actividad, utilizar
 1. En la esquina superior derecha, abre el editor de archivos.
 1. Añade un `theme:` establecido en **minima** para que aparezca en el archivo `_config.yml` como se indica a continuación:
     ```yml
-    tema: minima
+    theme: minima
     ```
 1. (Opcional) Puedes modificar las otras variables de configuración como `title:`, `author:`, y `description:` para personalizar aún más tu sitio.
 1. Confirma los cambios.
@@ -159,8 +159,8 @@ Para más información sobre la configuración del _frontmatter_, consulta la [d
 1. Escribe el siguiente contenido en la parte superior de la entrada de tu blog:
    ```yaml
    ---
-   título: "TU TÍTULO"
-   fecha: AAAA-MM-DD
+   title: "TU TÍTULO"
+   date: AAAA-MM-DD
    ---
    ```
 1. Sustituye "TU TÍTULO" por el título de tu entrada en el blog.
