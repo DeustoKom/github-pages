@@ -7,7 +7,7 @@
 
 # GitHub Pages
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+_Crea un sitio o un blog a partir de tus repositorios de GitHub con GitHub Pages._
 
 <!--
   <<< Author notes: Start of the course >>>
@@ -20,23 +20,23 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 <!--step0-->
 
-With GitHub Pages, you can host project blogs, documentation, resumes, portfolios, or any other static content you'd like. Your GitHub repository can easily become its own website. In this course, we'll show you how to set up your own site or blog using GitHub Pages.
+Con GitHub Pages, puedes alojar blogs de proyectos, documentación, currículos, portafolios o cualquier otro contenido estático que desees. Tu repositorio de GitHub puede convertirse fácilmente en su propio sitio web. En este curso, te mostraremos cómo configurar tu propio sitio o blog utilizando GitHub Pages.
 
-- **Who is this for**: Beginners, students, project maintainers, small businesses.
-- **What you'll learn**: How to build a GitHub Pages site.
-- **What you'll build**: We'll build a simple GitHub Pages site with a blog. We'll use [Jekyll](https://jekyllrb.com), a static site generator.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course is five steps long and takes less than one hour to complete.
+- **A quién va dirigido**: Principiantes, estudiantes, gestores de proyectos, pequeñas empresas.
+- **Qué aprenderás**: Cómo construir un sitio web usando GitHub Pages.
+- **Qué construirás**: Construiremos un sitio simple de GitHub Pages con un blog. Usaremos [Jekyll](https://jekyllrb.com), un generador de sitios estáticos.
+- **Requisitos**: Si necesitas aprender sobre ramas, commits y pull requests, toma primero [Introducción a GitHub](https://github.com/DeustoKom/introduccion-a-github). Para saber más acerca de cómo formatear tu contenido usando Markdown, sigue [Comunicar usando Markdown](https://github.com/DeustoKom/comunicar-usando-markdown).
+- **Cuánto tiempo**: Este curso consta de cinco pasos y tardarás menos de una hora en completarlo.
 
-## How to start this course
+## Cómo empezar este curso
 
-1. Above these instructions, right-click **Use this template** and open the link in a new tab.
+1. Encima de estas instrucciones, haz clic con el botón derecho del ratón en **Use this template** y abre el enlace en una nueva pestaña.<br />
    ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
-2. In the new tab, follow the prompts to create a new repository.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository—private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+2. En la nueva pestaña, sigue las indicaciones para crear un nuevo repositorio.
+   - En **Owner**, elije tu cuenta personal o una organización para alojar el repositorio.
+   - Recomendamos crear un repositorio público - los repositorios privados [utilizarán minutos de Acciones](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+3. Una vez creado tu nuevo repositorio, espera unos 20 segundos y actualiza la página. Sigue las instrucciones paso a paso en el README del nuevo repositorio.
 
 <!--endstep0-->
 
@@ -49,19 +49,19 @@ With GitHub Pages, you can host project blogs, documentation, resumes, portfolio
 -->
 
 <details id=1>
-<summary><h2>Step 1: Enable GitHub Pages</h2></summary>
+<summary><h2>Paso 1: Habilita GitHub Pages</h2></summary>
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+_¡Bienvenida/o a GitHub Pages y Jekyll :tada:!_
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+El primer paso es habilitar GitHub Pages en este [repositorio](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). Cuando habilitas GitHub Pages en un repositorio, GitHub toma el contenido que está en la rama principal `main` y publica una página web basada en su contenido.
 
-### :keyboard: Activity: Enable GitHub Pages
+### :keyboard: Actividad: Habilita GitHub Pages
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages**, in the "GitHub Pages" section, use the Source drop-down, then select **main branch**.
-1. Wait about _one minute_, then refresh this page for the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
+1. Abre una nueva pestaña del navegador, y trabaja en los pasos de tu segunda pestaña mientras lees las instrucciones en esta pestaña.
+1. Debajo del nombre de tu repositorio, haga clic en **Settings**.
+1. Haz clic en **PAges**, en la sección "GitHub Pages", utiliza el desplegable **Source**, y luego selecciona **main branch**.
+1. Espera alrededor de _un minuto_, luego actualiza esta página para el siguiente paso.
+   > Al activar GitHub Pages se crea un despliegue (o _deploy_) de tu repositorio. Las acciones de GitHub pueden tardar hasta un minuto en responder mientras se espera el despliegue. Los próximos pasos serán de unos 20 segundos; este primer paso es más lento.
 
 </details>
 
@@ -73,27 +73,27 @@ The first step is to enable GitHub Pages on this [repository](https://docs.githu
 -->
 
 <details id=2>
-<summary><h2>Step 2: Configure your site</h2></summary>
+<summary><h2>Paso 2: Configura tu sitio</h2></summary>
 
-_You turned on GitHub Pages! :tada:_
+_¡Has habilitado GitHub Pages!_ :tada:
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+Trabajaremos en una rama, `my-pages`, que hemos creado para ti para que este sitio se vea bien. :sparkle:
 
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+Jekyll utiliza un archivo titulado `_config.yml` para almacenar la configuración de tu sitio, tu tema, y el contenido reutilizable como el título de tu sitio y la dirección de GitHub. Puedes consultar el archivo `_config.yml` en la pestaña **Code** de tu repositorio.
 
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+Tenemos que utilizar un tema preparado para blogs. Para esta actividad, utilizaremos un tema llamado "minima".
 
-### :keyboard: Activity: Configure your site
+### :keyboard: Actividad: Configura tu sitio
 
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
+1. Busca el archivo `_config.yml` en la rama `my-pages`.
+1. En la esquina superior derecha, abre el editor de archivos.
+1. Añade un `theme:` establecido en **minima** para que aparezca en el archivo `_config.yml` como se indica a continuación:
     ```yml
-    theme: minima
+    tema: minima
     ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. (Opcional) Puedes modificar las otras variables de configuración como `title:`, `author:`, y `description:` para personalizar aún más tu sitio.
+1. Confirma los cambios.
+1. Espera unos 20 segundos y actualiza esta página para el siguiente paso.
 
 </details>
 
@@ -105,20 +105,20 @@ We need to use a blog-ready theme. For this activity, we will use a theme named 
 -->
 
 <details id=3>
-<summary><h2>Step 3: Customize your homepage</h2></summary>
+<summary><h2>Paso 3: Personaliza tu página de inicio</h2></summary>
 
-_Nice work setting the theme! :sparkles:_
+_¡Buen trabajo estableciendo el tema! :sparkles:_
 
-You can customize your homepage by adding content to either an `index.md` file or the `README.md` file. GitHub Pages first looks for an `index.md` file. Your repository has an `index.md` file so we can update it to include your personalized content.
+Puedes personalizar tu página de inicio añadiendo contenido a un archivo `index.md` o al archivo `README.md`. GitHub Pages busca primero un archivo `index.md`. Tu repositorio tiene un archivo `index.md`, por lo que podemos actualizarlo para incluir tu contenido personalizado.
 
-### :keyboard: Activity: Create your homepage
+### :keyboard: Actividad: Crea tu página de inicio
 
-1. Browse to the `index.md` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Type the content you want on your homepage. You can use Markdown formatting on this page.
-1. (optional) You can also modify `title:` or just ignore it for now. We'll discuss it in the next step.
-1. Commit your changes to the `my-pages` branch.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Busca el archivo `index.md` en la rama `my-pages`.
+1. En la esquina superior derecha, abre el editor de archivos.
+1. Escribe el contenido que deseas mostrar en tu página de inicio. Puedes utilizar el formato Markdown en esta página.
+1. (Opcional) También puedes modificar `title:` o simplemente ignorarlo por ahora. Lo discutiremos en el siguiente paso.
+1. Confirma tus cambios en la rama `my-pages`.
+1. Espera unos 20 segundos y actualiza esta página para el siguiente paso.
 
 </details>
 
@@ -130,43 +130,44 @@ You can customize your homepage by adding content to either an `index.md` file o
 -->
 
 <details id=4>
-<summary><h2>Step 4: Create a blog post</h2></summary>
+<summary><h2>Paso 4: Crea un post en el blog</h2></summary>
 
-_Your home page is looking great! :cowboy_hat_face:_
+_¡Tu página de inicio se ve genial! :cowboy_hat_face:_
 
-GitHub Pages uses Jekyll. In Jekyll, we can create a blog by using specially named files and frontmatter. The files must be named `_posts/YYYY-MM-DD-title.md`. You must also include `title` and `date` in your frontmatter.
+GitHub Pages utiliza Jekyll. En Jekyll, podemos crear un blog utilizando archivos con nombres específicos y _frontmatter_ o cabeceras de archivo. Los archivos deben llamarse `_posts/AAAA-MM-DD-title.md`. También debes incluir `title` y `date` en tu _frontmatter_.
 
-**What is _frontmatter_?**: The syntax Jekyll files use is called YAML frontmatter. It goes at the top of your file and looks something like this:
+**¿Qué es el _frontmatter_?** La sintaxis que usan los archivos Jekyll se llama YAML frontmatter. Va en la parte superior de su archivo y se parece a esto:
+
 
 ```yml
 ---
-title: "Welcome to my blog"
-date: 2019-01-20
+title: "Bienvenida/o a mi blog"
+date: 2022-11-03
 ---
 ```
 
-For more information about configuring front matter, see the [Jekyll frontmatter documentation](https://jekyllrb.com/docs/frontmatter/).
+Para más información sobre la configuración del _frontmatter_, consulta la [documentación de _frontmatter_ en Jekyll](https://jekyllrb.com/docs/frontmatter/).
 
-### :keyboard: Activity: Create a blog post
+### :keyboard: Actividad: Crea un post
 
-1. Browse to the `my-pages` branch.
-1. Click the `Add file` dropdown menu and then on `Create new file`.
-1. Name the file `_posts/YYYY-MM-DD-title.md`.
-1. Replace the `YYYY-MM-DD` with today's date, and change the `title` of your first blog post if you'd like.
-   > If you do edit the title, make sure there are hyphens between your words.
-   > If your blog post date doesn't follow the correct date convention, you'll receive an error and your site won't build. For more information, see "[Page build failed: Invalid post date](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites)".
-1. Type the following content at the top of your blog post:
+1. Navega hasta la rama `my-pages`.
+1. Haz clic en el menú desplegable `Add file` y luego en `Create new file`.
+1. Nombra el archivo `_posts/AAAA-MM-DD-title.md`.
+1. Sustituye el `AAAA-MM-DD` por la fecha de hoy, y cambia el `title` de tu primera entrada del blog si lo deseas.
+   > Si editas el título, asegúrate de que hay guiones entre las palabras.
+   > Si la fecha de la entrada de tu blog no sigue la convención de fechas correcta, recibirás un error y tu sitio no se construirá. Para obtener más información, consulta "[Error en la creación de la página: fecha de publicación no válida](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites)".
+1. Escribe el siguiente contenido en la parte superior de la entrada de tu blog:
    ```yaml
    ---
-   title: "YOUR-TITLE"
-   date: YYYY-MM-DD
+   título: "TU TÍTULO"
+   fecha: AAAA-MM-DD
    ---
    ```
-1. Replace `YOUR-TITLE` with the title for your blog post.
-1. Replace `YYYY-MM-DD` with today's date.
-1. Type a quick draft of your blog post. Remember, you can always edit it later.
-1. Commit your changes to your branch.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Sustituye "TU TÍTULO" por el título de tu entrada en el blog.
+1. Sustituye "AAAA-MM-DD" por la fecha de hoy.
+1. Escribe un borrador rápido de tu entrada en el blog. Recuerda que siempre puedes editarlo más tarde.
+1. Confirma los cambios en tu rama.
+1. Espera unos 20 segundos y actualiza esta página para el siguiente paso.
 
 </details>
 
@@ -177,17 +178,17 @@ For more information about configuring front matter, see the [Jekyll frontmatter
 -->
 
 <details id=5>
-<summary><h2>Step 5: Merge your pull request</h2></summary>
+<summary><h2>Paso 5: Fusiona tu pull request</h2></summary>
 
-_Nice work, friend :heart:! People will be reading your blog in no time!_
+_¡Buen trabajo :heart:! Todo el mundo podrá leer tu blog en un momento..._
 
-You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
+Ahora puedes [fusionar](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) tu pull request.
 
-### :keyboard: Activity: Merge your pull request
+### :keyboard: Actividad: Fusiona tu pull request
 
-1. Click **Merge pull request**.
-1. Delete the branch `my-pages` (optional).
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Haz clic en **Merge pull request**.
+1. Elimina la rama `my-pages` (opcional).
+1. Espera unos 20 segundos y actualiza esta página para el siguiente paso.
 
 </details>
 
@@ -197,28 +198,28 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 -->
 
 <details id=X>
-<summary><h2>Finish</h2></summary>
+<summary><h2>Finalización</h2></summary>
 
-_Congratulations friend, you've completed this course!_
+_¡Enhorabuena, has completado el curso!_
 
 <img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
 
-Your blog is now live and has been deployed!
+¡Tu blog ahora está visible y se ha desplegado!
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Aquí tienes un resumen de todas las tareas que has realizado en tu repositorio:
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first a blog post with Jekyll!
+- Has habilitado GitHub Pages.
+- Has seleccionado un tema usando el archivo de configuración.
+- Has aprendido sobre el formato de directorio y las convenciones de nomenclatura de archivos en Jekyll.
+- Has creado tu primera entrada de blog con Jekyll.
 
-### What's next?
+### ¿Y ahora, qué?
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+- Sigue trabajando en tu sitio de GitHub Pages... ¡nos encanta ver lo que se te ocurre!
+- Nos encantaría saber qué te ha parecido este curso [en nuestro foro de debate](https://github.com/skills/.github/discussions).
+- [Haz otro curso de GitHub Skills](https://github.com/skills).
+- Lee los documentos de inicio de GitHub](https://docs.github.com/en/get-started).
+- Para encontrar proyectos a los que contribuir, consulta [GitHub Explore](https://github.com/explore).
 
 </details>
 
